@@ -3,10 +3,11 @@ import java.util.Scanner;
 public class convater {
     public static void main(String[] args) {
         System.out.println("Currency Converter Apps: ");
-        System.out.println("1 Convert SEK To USD");
-        System.out.println("2 Convert USD TO SEK");
-        System.out.println("3 Convert SEK TO Euro");
-        System.out.println("4 Convert Euro TO SEK");
+        System.out.println("1. Convert SEK To USD");
+        System.out.println("2. Convert USD TO SEK");
+        System.out.println("3. Convert SEK TO Euro");
+        System.out.println("4. Convert Euro TO SEK");
+        System.out.println("0. Exit");
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Choose the currency");
@@ -27,6 +28,9 @@ public class convater {
             case 4:
                 euro(amount);
                 break;
+
+                case 0:
+                  System.exit(0);
 
             default:
                 System.out.println("Invalid choice");
@@ -55,7 +59,7 @@ public class convater {
     public static void krona3(double amount) {
         System.out.println("1 SEK" + 0.87 + "EURO");
         System.out.println();
-        System.out.println(amount + " euro = " + ( 0.87*amount) + " Dollar");
+        System.out.println(amount + " SEK = " + ( 0.87*amount) + " EURO");
         System.out.println();
 
     }
